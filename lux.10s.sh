@@ -5,12 +5,14 @@
 #* by Kurt Malley (wut@kmal.rip)
 
 #! metadata
-#? <xbar.title>Lunar Sensor</xbar.title>
-#? <xbar.version>0.0.1</xbar.version>
+#? <xbar.title>Lux Sensor Output</xbar.title>
+#? <xbar.version>0.0.3</xbar.version>
 #? <xbar.author.github>kmal808</xbar.author.github>
+#? <xbar.author>Kurt Malley</xbar.author>
 #? <xbar.desc>Display the value read from a tsl2591 I2C lux sensor</xbar.desc>
+#? <xbar.dependencies>curl, jq</xbar.dependencies>
 #? <xbar.image></xbar.image>
 
-LUX_VALUE=$(curl lunarsensor.local/sensor/ambient_light_tsl2591 | jq -r .state)
+LUX_VALUE=$(curl 192.168.0.62/sensor/ambient_light_tsl2591 | jq -r .state)
 
 echo "☀️ $LUX_VALUE lx" 
