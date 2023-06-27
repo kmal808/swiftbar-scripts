@@ -13,6 +13,6 @@
 #? <xbar.dependencies>curl, jq</xbar.dependencies>
 #? <xbar.image></xbar.image>
 
-LUX_VALUE=$(curl 192.168.0.62/sensor/ambient_light_tsl2591 | jq -r .state)
+LUX_VALUE=$(curl 10.10.10.149/sensor/ambient_light_tsl2591 | jq -r .state)
 
 echo "☀️ $LUX_VALUE lx" 
