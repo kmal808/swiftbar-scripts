@@ -9,7 +9,7 @@
 # <xbar.dependencies>bash</xbar.dependencies>
 # <xbar.version>1.1</xbar.version>
 
-# <xbar.var>string(VAR_NAME="xbar"): Name to display in the menubar.</xbar.var>
+# <xbar.var>string(VAR_NAME="xbar"): 🔨k-mal </xbar.var>
 
 # v1.1
 # Check aggregator directory existence
@@ -20,7 +20,7 @@ if [ -d aggregator ]; then
 	cd aggregator || exit
 	filecount=$(find . -not -path '*/\.*' | wc -l)
 	if [ "$filecount" -eq 1 ]; then
-		echo "Your aggregator directory seems empty, put you plugin inside the directory then select this line to refresh | refresh=true" >> "$tmpfile"
+		echo "Your aggregator directory seems empty, put your plugin inside the directory then select this line to refresh | refresh=true" >> "$tmpfile"
 	else
 		for file in *; do
 			export i=0; "./$file" | grep -E -v '^---$' | while read -r line; do i=$((i+1)); if [ "$i" -ne 1 ]; then echo -n "--" >> "$tmpfile"; fi; echo "$line" >> "$tmpfile"; done
