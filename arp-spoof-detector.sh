@@ -5,7 +5,7 @@
 # <xbar.version>v1.0</xbar.version>
 # <xbar.author>Tuan Nguyen</xbar.author>
 # <xbar.author.github>tuannvm</xbar.author.github>
-# <xbar.desc>This plugin detect the ARP spoofing attack on local area network and notify user</xbar.desc>
+# <xbar.desc>This plugin detects the ARP spoofing attack on local area network and notifies user</xbar.desc>
 # <xbar.image>http://i.imgur.com/2jE6g7v.png</xbar.image>
 # <xbar.abouturl>https://github.com/matryer/bitbar-plugins/tree/master/System/arp-spoof-detector.sh</xbar.abouturl>
 #
