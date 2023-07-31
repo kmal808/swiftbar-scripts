@@ -1,7 +1,6 @@
 #!/bin/sh
 
-#* Display the value read from a tsl2591 I2C lux sensor => https://www.adafruit.com/product/1980
-#
+#* Display the value read from a tsl2591 I2C lux sensor => https://www.adafruit.com/product/1980. Used in coordination with a DDC server to adjust monitor brightness. 
 #* by Kurt Malley (wut@kmal.rip)
 
 #! metadata
